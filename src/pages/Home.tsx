@@ -481,7 +481,7 @@ export default function Home() {
                     </div>
                   </div>
                   <img
-                    src="/case-orbita-planner.png"
+                    src={`${import.meta.env.BASE_URL}case-orbita-planner.png`}
                     alt="Орбита Planner — система управления строительным персоналом"
                     className="w-full block"
                   />
@@ -600,7 +600,7 @@ export default function Home() {
                     </div>
                   </div>
                   <img
-                    src="/case-sovereignty-audit.png"
+                    src={`${import.meta.env.BASE_URL}case-sovereignty-audit.png`}
                     alt="Аудит суверенности 9D — оценка технологической независимости портфельных компаний"
                     className="w-full block"
                   />
