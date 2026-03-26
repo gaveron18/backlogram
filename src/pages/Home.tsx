@@ -88,7 +88,7 @@ export default function Home() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-8"
             >
-              Инструмент для ускорения внутренней разработки
+              Инструмент для <span className="text-blue-500 italic">ускорения</span> внутренней разработки
             </motion.h1>
             
             <motion.p
