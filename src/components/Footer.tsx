@@ -24,7 +24,7 @@ export function Footer() {
           <div>
             <h3 className="text-slate-100 font-semibold mb-6">Продукт</h3>
             <ul className="space-y-4">
-              <li><a href="#technology" className="text-slate-400 hover:text-blue-400 text-sm transition-colors">Технология QDM</a></li>
+              <li><a href="#technology" className="text-slate-400 hover:text-blue-400 text-sm transition-colors">Технология</a></li>
               <li><a href="#process" className="text-slate-400 hover:text-blue-400 text-sm transition-colors">Схема работы</a></li>
               <li><a href="#cases" className="text-slate-400 hover:text-blue-400 text-sm transition-colors">Кейсы</a></li>
               <li><a href="#pricing" className="text-slate-400 hover:text-blue-400 text-sm transition-colors">Стоимость</a></li>
