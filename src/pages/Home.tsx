@@ -88,7 +88,7 @@ export default function Home() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-8"
             >
-              Инструмент для <span className="text-blue-500 italic">ускорения</span> бэклога
+              <span className="text-blue-500 italic">Ускоряем</span> разбор и выполнение бэклога в 7 раз
             </motion.h1>
             
             <motion.p
