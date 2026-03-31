@@ -134,15 +134,15 @@ export default function Home() {
                 {[
                   {
                     title: 'Программисты тонут в рутине',
-                    desc: 'Вместо сложной бизнес-логики команда тратит ресурс на админки, отчеты и справочники.'
+                    desc: 'Вместо сложной бизнес-логики команда тратит ресурс на админки, отчеты и справочники'
                   },
                   {
                     title: 'Бэклог растет бесконечно',
-                    desc: 'Скорость поставки падает, а бизнес ждет инструменты месяцами.'
+                    desc: 'Скорость поставки падает, а бизнес ждет инструменты месяцами'
                   },
                   {
                     title: 'Скрытая нагрузка на бюджет',
-                    desc: 'Каждый внутренний инструмент требует поддержки, обновления библиотек и ресурсов DevOps.'
+                    desc: 'Каждый внутренний инструмент требует поддержки, обновления библиотек и ресурсов DevOps'
                   }
                 ].map((item, i) => (
                   <motion.div
@@ -182,7 +182,7 @@ export default function Home() {
                   <div className="h-4 w-5/6 bg-slate-100 dark:bg-slate-800 rounded animate-pulse" />
                   <div className="pt-4 border-t border-slate-200 dark:border-slate-800">
                     <p className="text-blue-500 dark:text-blue-400 font-semibold mb-2">Наше предложение:</p>
-                    <p className="text-slate-700 dark:text-slate-300">Мы берем на себя задачи, которые съедают значительный ресурс вашей команды, и выполняем их беспрецедентно быстро.</p>
+                    <p className="text-slate-700 dark:text-slate-300">Мы берем на себя задачи, которые съедают значительный ресурс вашей команды, и выполняем их беспрецедентно быстро</p>
                   </div>
                 </div>
               </div>
@@ -251,17 +251,17 @@ export default function Home() {
               {
                 step: '01',
                 title: 'Выбор задачи',
-                desc: 'Вы выбираете любой проект из бэклога: учет, согласование, отчетность, справочники или админки.'
+                desc: 'Вы выбираете любой проект из бэклога: учет, согласование, отчетность, справочники или админки'
               },
               {
                 step: '02',
                 title: 'Проектирование',
-                desc: 'Мы анализируем требования и разворачиваем решение на платформе «Интеграм» под ваши нужды.'
+                desc: 'Мы анализируем требования и разворачиваем решение на платформе «Интеграм» под ваши требования'
               },
               {
                 step: '03',
                 title: 'Готовый инструмент',
-                desc: 'Вы получаете приложение с SSO, API, аудитом и интерфейсом в корпоративном стиле.'
+                desc: 'Вы получаете приложение с SSO, API, аудитом и интерфейсом в корпоративном стиле'
               }
             ].map((item, i) => (
               <motion.div
@@ -286,7 +286,7 @@ export default function Home() {
               <CheckCircle2 size={24} />
             </div>
             <p className="text-slate-600 dark:text-slate-300 text-lg">
-              Результат — <span className="text-slate-800 dark:text-slate-100 font-bold">100% кастомизированное коробочное решение</span>, которое живет внутри вашего контура и не требует команды сопровождения.
+              Результат — <span className="text-slate-800 dark:text-slate-100 font-bold">100% кастомизированное коробочное решение</span>, которое живет внутри вашего контура и не требует команды сопровождения
             </p>
           </div>
         </div>
@@ -360,22 +360,22 @@ export default function Home() {
               {
                 icon: Cpu,
                 title: 'LLM в ядре',
-                desc: 'Языковые модели встроены в архитектуру продукта, а не добавлены сверху как функция.'
+                desc: 'Языковые модели встроены в архитектуру продукта, а не добавлены сверху как функция'
               },
               {
                 icon: Code2,
                 title: 'Агенты пишут код',
-                desc: 'Агенты генерируют, тестируют и рефакторят код — разработчики контролируют результат, а не пишут рутину.'
+                desc: 'Агенты генерируют, тестируют и рефакторят код — разработчики контролируют результат, а не пишут рутину'
               },
               {
                 icon: Zap,
                 title: 'Автоматические интеграции',
-                desc: 'Подключение к внешним системам и API описывается на языке задачи — агент строит интеграцию самостоятельно.'
+                desc: 'Подключение к внешним системам и API описывается на языке задачи — агент строит интеграцию самостоятельно'
               },
               {
                 icon: Activity,
                 title: 'Непрерывное улучшение',
-                desc: 'Модели обучаются на паттернах вашего бизнеса и становятся точнее с каждым запросом.'
+                desc: 'Модели обучаются на паттернах вашего бизнеса и становятся точнее с каждым запросом'
               }
             ].map((item, i) => (
               <motion.div
@@ -409,10 +409,10 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Activity, title: 'API наружу и внутрь', desc: 'Настройка коннекторов без программирования.' },
-              { icon: Users, title: 'Active Directory / SSO', sub: 'Интеграция с корпоративными методами аутентификации.' },
+              { icon: Activity, title: 'API наружу и внутрь', desc: 'Настройка коннекторов без программирования' },
+              { icon: Users, title: 'Active Directory / SSO', sub: 'Интеграция с корпоративными методами аутентификации' },
               { icon: BarChart3, title: 'Мониторинг и Аудит', sub: 'Выгрузка данных в ваши системы (ELK, Zabbix и др.)' },
-              { icon: Settings2, title: 'On-premise / Cloud', sub: 'Работа на вашем контуре для полной безопасности.' }
+              { icon: Settings2, title: 'On-premise / Cloud', sub: 'Работа на вашем контуре для полной безопасности' }
             ].map((item, i) => (
               <div key={i} className="p-8 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 hover:border-slate-300 dark:hover:border-slate-700 transition-all text-center shadow-sm dark:shadow-none">
                 <div className="mx-auto w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-500 mb-6">
@@ -431,7 +431,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Примеры из практики</h2>
-            <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">Реальные проекты, реализованные на платформе для разных отраслей и задач.</p>
+            <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">Реальные проекты, реализованные на платформе для разных отраслей и задач</p>
           </div>
 
           {/* Case 1: Construction Worker Motivation System */}
@@ -675,7 +675,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Готовые типы проектов для вашего бэклога</h2>
-            <p className="text-slate-500 dark:text-slate-400">Любая из этих задач может быть реализована как полноценное веб-приложение.</p>
+            <p className="text-slate-500 dark:text-slate-400">Любая из этих задач может быть реализована как полноценное веб-приложение</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -713,7 +713,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Как начать быстро и комфортно</h2>
-            <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto italic italic">Прозрачные условия для пилота и эксплуатации.</p>
+            <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto italic italic">Прозрачные условия для пилота и эксплуатации</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -836,7 +836,7 @@ export default function Home() {
             <div>
               <h2 className="text-3xl md:text-5xl font-bold mb-8">Готовы разгрузить свой бэклог?</h2>
               <p className="text-slate-500 dark:text-slate-400 text-lg mb-8">
-                Пришлите описание задачи или проект из очереди. Мы сделаем предварительную оценку архитектуры и сроков за 24 часа.
+                Пришлите описание задачи или проект из очереди, и&nbsp;мы&nbsp;сделаем предварительную оценку архитектуры и&nbsp;сроков за&nbsp;24&nbsp;часа
               </p>
 
               <div className="space-y-6">
