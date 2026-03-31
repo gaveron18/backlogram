@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Menu, X, ExternalLink, Sun, Moon } from 'lucide-react'
+import { Menu, X, Sun, Moon } from 'lucide-react'
 import { useState } from 'react'
 import { useTheme } from '../context/ThemeContext'
 
@@ -45,12 +45,10 @@ export function Header() {
               {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
             </button>
             <a
-              href="https://ideav.ru/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#cta"
               className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-lg transition-all"
             >
-              Попробовать самому
+              Заказать демо
             </a>
           </nav>
 
@@ -93,13 +91,11 @@ export function Header() {
             ))}
             <div className="pt-4 px-3">
               <a
-                href="https://ideav.ru/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#cta"
                 onClick={() => setIsOpen(false)}
                 className="flex items-center justify-center w-full px-4 py-3 bg-blue-600 text-white font-semibold rounded-lg"
               >
-                Попробовать самому
+                Заказать демо
               </a>
             </div>
           </div>
