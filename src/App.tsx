@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
+import { ThemeProvider } from './context/ThemeContext'
 
 function ScrollToHash() {
   const { hash } = useLocation()
@@ -23,13 +24,15 @@ function ScrollToHash() {
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-50 selection:bg-blue-500/30">
-      <ScrollToHash />
-      <Header />
-      <main>
-        <Outlet />
-      </main>
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <div className="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 selection:bg-blue-500/30 transition-colors duration-300">
+        <ScrollToHash />
+        <Header />
+        <main>
+          <Outlet />
+        </main>
+        <Footer />
+      </div>
+    </ThemeProvider>
   )
 }
