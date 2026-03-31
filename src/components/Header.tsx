@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Menu, X, ExternalLink } from 'lucide-react'
+import { Menu, X, ExternalLink, Sun, Moon } from 'lucide-react'
 import { useState } from 'react'
+import { useTheme } from '../context/ThemeContext'
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
+  const { theme, toggleTheme } = useTheme()
 
   const navLinks = [
     { name: 'Технология', href: '#technology' },
@@ -14,7 +16,7 @@ export function Header() {
   ]
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-slate-800 bg-slate-950/80 backdrop-blur-md">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
@@ -30,11 +32,18 @@ export function Header() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium text-slate-400 hover:text-blue-400 transition-colors"
+                className="text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
               >
                 {link.name}
               </a>
             ))}
+            <button
+              onClick={toggleTheme}
+              aria-label={theme === 'dark' ? 'Включить светлую тему' : 'Включить тёмную тему'}
+              className="p-2 rounded-lg text-slate-500 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all"
+            >
+              {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
+            </button>
             <a
               href="#cta"
               className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-lg transition-all"
@@ -44,10 +53,17 @@ export function Header() {
           </nav>
 
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden flex items-center gap-2">
+            <button
+              onClick={toggleTheme}
+              aria-label={theme === 'dark' ? 'Включить светлую тему' : 'Включить тёмную тему'}
+              className="p-2 rounded-lg text-slate-500 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all"
+            >
+              {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
+            </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-slate-400 hover:text-white"
+              className="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -60,7 +76,7 @@ export function Header() {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden bg-slate-900 border-b border-slate-800"
+          className="md:hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800"
         >
           <div className="px-4 pt-2 pb-6 space-y-1">
             {navLinks.map((link) => (
@@ -68,7 +84,7 @@ export function Header() {
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block px-3 py-4 text-base font-medium text-slate-300 hover:text-blue-400 border-b border-slate-800/50"
+                className="block px-3 py-4 text-base font-medium text-slate-600 dark:text-slate-300 hover:text-blue-500 dark:hover:text-blue-400 border-b border-slate-100 dark:border-slate-800/50"
               >
                 {link.name}
               </a>
