@@ -918,8 +918,8 @@ export default function Home() {
             className="inline-flex flex-col sm:flex-row items-center justify-center gap-3 px-10 py-6 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white font-bold rounded-2xl shadow-xl shadow-blue-600/25 transition-all group"
           >
             <ExternalLink size={22} className="shrink-0 group-hover:scale-110 transition-transform" />
-            <span className="text-lg sm:text-xl leading-tight">
-              Посмотреть и попробовать самому: описание, своя песочница, интерактивные уроки
+            <span className="leading-tight">
+              Посмотреть и попробовать самому: своя песочница, описание, интерактивные уроки
             </span>
           </a>
         </div>
