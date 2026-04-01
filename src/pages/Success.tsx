@@ -4,7 +4,7 @@ import { CheckCircle2, Mail, Phone, Send } from 'lucide-react'
 export default function Success() {
   return (
     <div className="min-h-screen flex items-center justify-center px-6 py-32">
-      <div className="max-w-lg w-full text-center space-y-8">
+      <div className="w-full text-center space-y-8">
         <div className="flex justify-center">
           <CheckCircle2 className="w-20 h-20 text-green-500" strokeWidth={1.5} />
         </div>
