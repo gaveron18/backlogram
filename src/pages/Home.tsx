@@ -139,7 +139,7 @@ export default function Home() {
                     desc: 'Вместо реализации сложной бизнес-логики команда тратит ресурс на организационную рутину'
                   },
                   {
-                    title: 'Бэклог растет бесконечно',
+                    title: 'Бэклог (очередь) растет бесконечно',
                     desc: 'Скорость поставки падает, а бизнес ждет инструменты месяцами'
                   },
                   {
@@ -253,7 +253,7 @@ export default function Home() {
               {
                 step: '01',
                 title: 'Выбор задачи',
-                desc: 'Вы выбираете любой проект из бэклога: учет, согласование, отчетность, справочники или админки'
+                desc: 'Вы выбираете любой проект из очереди: учет, согласование, отчетность, справочники или админки'
               },
               {
                 step: '02',
@@ -361,7 +361,7 @@ export default function Home() {
             {[
               {
                 icon: Cpu,
-                title: 'LLM в ядре',
+                title: 'ИИ в ядре',
                 desc: 'Языковые модели встроены в архитектуру продукта, а не добавлены сверху как функция'
               },
               {
@@ -471,7 +471,7 @@ export default function Home() {
 
               <div className="grid grid-cols-3 gap-4">
                 <div className="p-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 text-center shadow-sm dark:shadow-none">
-                  <div className="text-2xl font-black text-blue-500 mb-1">MVP</div>
+                  <div className="text-2xl font-black text-blue-500 mb-1">Запуск</div>
                   <div className="text-xs text-slate-400 dark:text-slate-500 uppercase font-bold tracking-widest">за 6 недель</div>
                 </div>
                 <div className="p-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 text-center shadow-sm dark:shadow-none">
@@ -557,7 +557,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="text-sm font-bold text-slate-700 dark:text-slate-200">Реализация:</h4>
-                      <p className="text-sm text-slate-500 dark:text-slate-400">9D Аудит, пирамида суверенности, моделировщик, анализатор репозиториев (50+ метрик) и автоматические дорожные карты.</p>
+                      <p className="text-sm text-slate-500 dark:text-slate-400">9D Аудит, пирамида суверенности, моделировщик, анализатор хранилищ кода (50+ метрик) и автоматические дорожные карты.</p>
                     </div>
                   </div>
                 </div>
@@ -686,7 +686,7 @@ export default function Home() {
               'Управление заявками и инцидентами',
               'Реестры и справочники с версионностью',
               'Админки для смежных систем',
-              'Отчетность и дашборды с ролями',
+              'Отчетность и информационные панели',
               'Инвентаризация и учет оборудования',
               'Бюджетирование и согласование',
               'Центры управления НСИ',
@@ -731,7 +731,7 @@ export default function Home() {
                 </div>
               </div>
               <ul className="space-y-4 mb-8 flex-1">
-                {['Выбор задачи из бэклога', 'Полный цикл разработки', 'Развертывание в контуре', 'Инструкции и доки'].map((item, i) => (
+                {['Выбор задачи из очереди', 'Полный цикл разработки', 'Развертывание в контуре', 'Инструкции и доки'].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-sm text-slate-500 dark:text-slate-400">
                     <CheckCircle2 size={14} className="text-blue-500" />
                     {item}
@@ -836,7 +836,7 @@ export default function Home() {
             <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600/10 blur-[100px] rounded-full -z-10" />
 
             <div>
-              <h2 className="text-3xl md:text-5xl font-bold mb-8">Готовы разгрузить свой бэклог?</h2>
+              <h2 className="text-3xl md:text-5xl font-bold mb-8">Готовы разгрузить свой бэклог (очередь задач)?</h2>
               <p className="text-slate-500 dark:text-slate-400 text-lg mb-8">
                 Пришлите описание задачи или проект из очереди, и&nbsp;мы&nbsp;сделаем предварительную оценку архитектуры и&nbsp;сроков за&nbsp;24&nbsp;часа
               </p>
