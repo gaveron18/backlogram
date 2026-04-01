@@ -15,8 +15,8 @@ export function Footer() {
               <span>Интеграм</span>
             </Link>
             <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6">
-              Промышленная low-code платформа для корпоративной разработки.
-              Разгружаем бэклог, сохраняя контроль над архитектурой и безопасностью.
+              Промышленная платформа для корпоративной разработки без программирования.
+              Разгружаем программистов, сохраняя контроль над архитектурой и безопасностью.
             </p>
           </div>
 
@@ -26,7 +26,7 @@ export function Footer() {
             <ul className="space-y-4">
               <li><a href="#technology" className="text-slate-500 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 text-sm transition-colors">Технология</a></li>
               <li><a href="#process" className="text-slate-500 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 text-sm transition-colors">Схема работы</a></li>
-              <li><a href="#cases" className="text-slate-500 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 text-sm transition-colors">Кейсы</a></li>
+              <li><a href="#cases" className="text-slate-500 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 text-sm transition-colors">Примеры</a></li>
               <li><a href="#pricing" className="text-slate-500 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 text-sm transition-colors">Стоимость</a></li>
             </ul>
           </div>
@@ -36,7 +36,7 @@ export function Footer() {
             <h3 className="text-slate-800 dark:text-slate-100 font-semibold mb-6">Ресурсы</h3>
             <ul className="space-y-4">
               <li><a href="https://help.integram.io/" target="_blank" rel="noopener noreferrer" className="text-slate-500 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 text-sm transition-colors flex items-center gap-2">Документация <ExternalLink size={12} /></a></li>
-              <li><a href="https://integram.io/api.html" target="_blank" rel="noopener noreferrer" className="text-slate-500 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 text-sm transition-colors">API Reference</a></li>
+              <li><a href="https://integram.io/api.html" target="_blank" rel="noopener noreferrer" className="text-slate-500 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 text-sm transition-colors">Интеграции</a></li>
               <li><a href="https://integram.io/terms.html" target="_blank" rel="noopener noreferrer" className="text-slate-500 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 text-sm transition-colors">Правила использования</a></li>
               <li><a href="https://rutube.ru/channel/41204904/videos/" target="_blank" rel="noopener noreferrer" className="text-slate-500 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 text-sm transition-colors">RUTUBE</a></li>
             </ul>
@@ -67,10 +67,10 @@ export function Footer() {
 
         <div className="pt-8 border-t border-slate-200 dark:border-slate-900 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-slate-400 dark:text-slate-500 text-xs">
-            © {currentYear} ООО «Интеграм». Все права защищены.
+            © {currentYear} АО «Интеграм». Все права защищены.
           </div>
           <div className="text-slate-400 dark:text-slate-500 text-xs italic">
-            Не только замена Excel. Промышленный инструмент ускорения бэклога.
+            Не только замена Excel. Промышленный инструмент ускорения разработки.
           </div>
         </div>
       </div>
