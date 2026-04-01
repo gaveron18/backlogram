@@ -9,10 +9,10 @@ export function Header() {
   const { theme, toggleTheme } = useTheme()
 
   const navLinks = [
-    { name: 'Технология', href: '#technology' },
-    { name: 'Как работаем', href: '#process' },
-    { name: 'Примеры', href: '#cases' },
-    { name: 'Цены', href: '#pricing' },
+    { name: 'Технология', href: '/#technology' },
+    { name: 'Как работаем', href: '/#process' },
+    { name: 'Примеры', href: '/#cases' },
+    { name: 'Цены', href: '/#pricing' },
   ]
 
   return (
@@ -45,7 +45,7 @@ export function Header() {
               {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
             </button>
             <a
-              href="#cta"
+              href="/#cta"
               className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-lg transition-all"
             >
               Заказать демо
@@ -91,7 +91,7 @@ export function Header() {
             ))}
             <div className="pt-4 px-3">
               <a
-                href="#cta"
+                href="/#cta"
                 onClick={() => setIsOpen(false)}
                 className="flex items-center justify-center w-full px-4 py-3 bg-blue-600 text-white font-semibold rounded-lg"
               >
