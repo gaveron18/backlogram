@@ -114,8 +114,8 @@ export default function Home() {
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </a>
               <a
-                href="https://ideav.ru/"
-                target="_blank"
+                href="https://ideav.ru/start.html"
+                target="start"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto px-8 py-4 bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 text-slate-700 dark:text-slate-300 font-semibold rounded-xl transition-all"
               >
@@ -912,8 +912,8 @@ export default function Home() {
       <section className="py-16 border-t border-slate-200 dark:border-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <a
-            href="https://ideav.ru/"
-            target="_blank"
+            href="https://ideav.ru/start.html"
+            target="start"
             rel="noopener noreferrer"
             className="inline-flex flex-col sm:flex-row items-center justify-center gap-3 px-10 py-6 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white font-bold rounded-2xl shadow-xl shadow-blue-600/25 transition-all group"
           >
