@@ -79,7 +79,7 @@ export default function Home() {
               className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-500 dark:text-blue-400 text-sm font-medium mb-6"
             >
               <Zap size={14} className="fill-current" />
-              <span>Low-code для Enterprise</span>
+              <span>Автоматизация без программистов</span>
             </motion.div>
 
             <motion.h1
@@ -110,7 +110,7 @@ export default function Home() {
                 href="#cta"
                 className="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-lg shadow-blue-600/20 transition-all flex items-center justify-center gap-2 group"
               >
-                Отправить задачу из бэклога
+                Отправить задачу из очереди задач (бэклога)
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </a>
               <a
@@ -136,7 +136,7 @@ export default function Home() {
                 {[
                   {
                     title: 'Программисты тонут в рутине',
-                    desc: 'Вместо сложной бизнес-логики команда тратит ресурс на админки, отчеты и справочники'
+                    desc: 'Вместо реализации сложной бизнес-логики команда тратит ресурс на организационную рутину'
                   },
                   {
                     title: 'Бэклог растет бесконечно',
@@ -144,7 +144,7 @@ export default function Home() {
                   },
                   {
                     title: 'Скрытая нагрузка на бюджет',
-                    desc: 'Каждый внутренний инструмент требует поддержки, обновления библиотек и ресурсов DevOps'
+                    desc: 'Внутренние разработки требуют дорогостоящего "переключения фокуса" для сопровождения'
                   }
                 ].map((item, i) => (
                   <motion.div
@@ -243,7 +243,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-800 dark:text-slate-100"><a href="#cta" className="text-blue-500 dark:text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors underline underline-offset-4 decoration-blue-500/50 dark:decoration-blue-400/50">Пришлите задачу</a>. Мы сделаем её работающим приложением.</h2>
-            <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">Ваш бэклог — наш приоритет. От идеи до эксплуатации в корпоративном контуре.</p>
+            <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">Ваш бэклог (очередь задач) — наш приоритет. От идеи до эксплуатации в корпоративном контуре.</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 relative">
@@ -263,7 +263,7 @@ export default function Home() {
               {
                 step: '03',
                 title: 'Готовый инструмент',
-                desc: 'Вы получаете приложение с SSO, API, аудитом и интерфейсом в корпоративном стиле'
+                desc: 'Вы получаете приложение с SSO (единый вход), API (программный интерфейс), аудитом и внешним видом в корпоративном стиле'
               }
             ].map((item, i) => (
               <motion.div
@@ -288,7 +288,7 @@ export default function Home() {
               <CheckCircle2 size={24} />
             </div>
             <p className="text-slate-600 dark:text-slate-300 text-lg">
-              Результат — <span className="text-slate-800 dark:text-slate-100 font-bold">100% кастомизированное коробочное решение</span>, которое живет внутри вашего контура и не требует команды сопровождения
+              Результат — <span className="text-slate-800 dark:text-slate-100 font-bold">100% настроенное под вас коробочное решение</span>, которое живет внутри вашего контура и не требует команды сопровождения
             </p>
           </div>
         </div>
@@ -325,7 +325,7 @@ export default function Home() {
                   <div className="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-500 flex items-center justify-center flex-shrink-0">
                     <CheckCircle2 size={14} />
                   </div>
-                  <span>Снижение Time-to-Market для минорных правок</span>
+                  <span>Сокращение времени вывода на рынок (Time-to-Market) для минорных правок</span>
                 </div>
                 <div className="flex items-center gap-3 text-slate-600 dark:text-slate-300">
                   <div className="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-500 flex items-center justify-center flex-shrink-0">
@@ -347,7 +347,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-500 dark:text-blue-400 text-sm font-medium mb-6">
               <Cpu size={14} />
-              <span>AI-native разработка</span>
+              <span>AI-native (на основе искусственного интеллекта) разработка</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-800 dark:text-slate-100">
               Мы строим продукты, интегрированные с&nbsp;<span className="text-blue-500 dark:text-blue-400">искусственным интеллектом</span>
@@ -367,17 +367,17 @@ export default function Home() {
               {
                 icon: Code2,
                 title: 'Агенты пишут код',
-                desc: 'Агенты генерируют, тестируют и рефакторят код — разработчики контролируют результат, а не пишут рутину'
+                desc: 'Агенты генерируют, тестируют и оптимизируют код — разработчики контролируют результат, а не пишут рутину'
               },
               {
                 icon: Zap,
                 title: 'Автоматические интеграции',
-                desc: 'Подключение к внешним системам и API описывается на языке задачи — агент строит интеграцию самостоятельно'
+                desc: 'Подключение к внешним системам описывается на языке задачи — агент строит интеграцию самостоятельно'
               },
               {
                 icon: Activity,
                 title: 'Непрерывное улучшение',
-                desc: 'Модели обучаются на паттернах вашего бизнеса и становятся точнее с каждым запросом'
+                desc: 'Модели обучаются на действующих сценариях вашего бизнеса и становятся точнее с каждым запросом'
               }
             ].map((item, i) => (
               <motion.div
@@ -411,10 +411,10 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Activity, title: 'API наружу и внутрь', desc: 'Настройка коннекторов без программирования' },
-              { icon: Users, title: 'Active Directory / SSO', sub: 'Интеграция с корпоративными методами аутентификации' },
+              { icon: Activity, title: 'Интеграции', desc: 'Настройка интеграционных модулей без программирования' },
+              { icon: Users, title: 'Аутентификация', sub: 'Интеграция с корпоративными методами аутентификации' },
               { icon: BarChart3, title: 'Мониторинг и Аудит', sub: 'Выгрузка данных в ваши системы (ELK, Zabbix и др.)' },
-              { icon: Settings2, title: 'On-premise / Cloud', sub: 'Работа на вашем контуре для полной безопасности' }
+              { icon: Settings2, title: 'Локальная установка', sub: 'Работа на вашем контуре для полной безопасности' }
             ].map((item, i) => (
               <div key={i} className="p-8 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 hover:border-slate-300 dark:hover:border-slate-700 transition-all text-center shadow-sm dark:shadow-none">
                 <div className="mx-auto w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-500 mb-6">
@@ -454,7 +454,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="text-sm font-bold text-slate-700 dark:text-slate-200">Задача:</h4>
-                      <p className="text-sm text-slate-500 dark:text-slate-400">Регистрация, онбординг, заведение проектов, распределение задач, процесс выполнения проекта.</p>
+                      <p className="text-sm text-slate-500 dark:text-slate-400">Регистрация, адаптация, заведение проектов, распределение задач, процесс выполнения проекта.</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
@@ -463,7 +463,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="text-sm font-bold text-slate-700 dark:text-slate-200">Реализация:</h4>
-                      <p className="text-sm text-slate-500 dark:text-slate-400">MVP системы: дашборд метрик, планирование H_min, назначения, мониторинг, экономика и симуляция сценариев.</p>
+                      <p className="text-sm text-slate-500 dark:text-slate-400">Структура данных и наполнение, сводная панель метрик, планирование H_min, назначения, мониторинг, экономика и симуляция сценариев.</p>
                     </div>
                   </div>
                 </div>
@@ -536,10 +536,10 @@ export default function Home() {
               <div className="p-8 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950/80 shadow-lg dark:shadow-xl">
                 <h3 className="text-xl font-bold text-slate-800 dark:text-slate-100 mb-6 flex items-center gap-3">
                   <span className="w-1.5 h-6 bg-blue-500 rounded-full" />
-                  Аудит суверенности портфеля венчурного фонда
+                  Аудит суверенности портфеля инвестиционного фонда
                 </h3>
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
-                  Венчурный фонд, инвестирующий в технологические компании (БПЛА, дроны, глубокий тех). Портфель из десятков стартапов с разной степенью зависимости от иностранных технологий.
+                  Фонд, инвестирующий в технологические компании (БПЛА, дроны, глубокие технологии). Портфель из десятков стартапов с разной степенью зависимости от иностранных технологий.
                 </p>
                 <div className="space-y-4">
                   <div className="flex gap-4">
@@ -557,7 +557,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="text-sm font-bold text-slate-700 dark:text-slate-200">Реализация:</h4>
-                      <p className="text-sm text-slate-500 dark:text-slate-400">9D Аудит, пирамида суверенности, моделлер, сканер репозиториев (50+ метрик) и автоматические дорожные карты.</p>
+                      <p className="text-sm text-slate-500 dark:text-slate-400">9D Аудит, пирамида суверенности, моделировщик, анализатор репозиториев (50+ метрик) и автоматические дорожные карты.</p>
                     </div>
                   </div>
                 </div>
@@ -607,7 +607,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="text-sm font-bold text-slate-700 dark:text-slate-200">Реализация:</h4>
-                      <p className="text-sm text-slate-500 dark:text-slate-400">Реестр процессов, автоматическая отчетность без кодинга, встроенная ролевая модель.</p>
+                      <p className="text-sm text-slate-500 dark:text-slate-400">Реестр процессов, автоматическая отчетность без программирования, встроенная ролевая модель.</p>
                     </div>
                   </div>
                 </div>
@@ -676,7 +676,7 @@ export default function Home() {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Готовые типы проектов для вашего бэклога</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Готовые типы проектов для вашего бэклога (очереди задач)</h2>
             <p className="text-slate-500 dark:text-slate-400">Любая из этих задач может быть реализована как полноценное веб-приложение</p>
           </div>
 
@@ -754,7 +754,7 @@ export default function Home() {
                 <span className="text-slate-400 dark:text-slate-500 text-xl font-bold">₽</span>
               </div>
               <ul className="space-y-4 mb-8 flex-1">
-                {['Неограниченное кол-во записей', 'Полный API функционал', 'Приоритетная поддержка', 'Любые коннекторы'].map((item, i) => (
+                {['Неограниченное количество записей', 'Полный функционал интеграции', 'Приоритетная поддержка', 'Любые коннекторы'].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-sm text-slate-500 dark:text-slate-400">
                     <CheckCircle2 size={14} className="text-blue-500" />
                     {item}
@@ -768,13 +768,13 @@ export default function Home() {
 
             <div className="p-8 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 flex flex-col hover:border-slate-300 dark:hover:border-slate-700 transition-all shadow-sm dark:shadow-none">
               <h3 className="text-xl font-bold mb-2">Разработка</h3>
-              <p className="text-slate-400 dark:text-slate-500 text-sm mb-6">Аналитика и кастомизация</p>
+              <p className="text-slate-400 dark:text-slate-500 text-sm mb-6">Аналитика и настройка</p>
               <div className="mb-6 flex items-baseline gap-2">
                 <span className="text-4xl font-black text-slate-900 dark:text-white">3 750</span>
                 <span className="text-slate-400 dark:text-slate-500 text-xl font-bold">₽/час</span>
               </div>
               <ul className="space-y-4 mb-8 flex-1">
-                {['Системный аналитик', 'Настройка сложных интеграций', 'Кастомизация UI/UX', 'Обучение сотрудников'].map((item, i) => (
+                {['Системный аналитик', 'Настройка сложных интеграций', 'Настройка интерфейсов', 'Обучение сотрудников'].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-sm text-slate-500 dark:text-slate-400">
                     <CheckCircle2 size={14} className="text-blue-500" />
                     {item}
