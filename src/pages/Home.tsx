@@ -316,16 +316,16 @@ export default function Home() {
             </div>
 
             <div className="order-1 lg:order-2">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Изменения вносятся бизнес-аналитиками, а не программистами</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Изменения вносятся бизнес-аналитиками, а&nbsp;не&nbsp;программистами</h2>
               <p className="text-slate-500 dark:text-slate-400 text-lg mb-8 leading-relaxed">
-                Ваши ИТ-ресурсы перестают тратить время на правки отчетов и интерфейсов. Этим занимаются аналитики или бизнес-пользователи в рамках их полномочий.
+                Ваши ИТ-ресурсы перестают тратить время на правки отчетов и&nbsp;интерфейсов. Этим занимаются аналитики или&nbsp;бизнес-пользователи в&nbsp;рамках их&nbsp;полномочий.
               </p>
               <div className="flex flex-col gap-4">
                 <div className="flex items-center gap-3 text-slate-600 dark:text-slate-300">
                   <div className="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-500 flex items-center justify-center flex-shrink-0">
                     <CheckCircle2 size={14} />
                   </div>
-                  <span>Сокращение времени вывода на рынок (Time-to-Market) для минорных правок</span>
+                  <span>Сокращение времени вывода на рынок (Time-to-Market) для&nbsp;минорных правок</span>
                 </div>
                 <div className="flex items-center gap-3 text-slate-600 dark:text-slate-300">
                   <div className="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-500 flex items-center justify-center flex-shrink-0">
@@ -353,7 +353,7 @@ export default function Home() {
               Мы строим продукты, интегрированные с&nbsp;<span className="text-blue-500 dark:text-blue-400">искусственным интеллектом</span>
             </h2>
             <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto text-lg">
-              Языковые модели и агенты берут на себя большую часть работы по программированию и интеграции — мы используем их полную мощь, чтобы доставлять решения быстрее.
+              Языковые модели и агенты берут на себя большую часть работы по&nbsp;программированию и&nbsp;интеграции — мы используем их&nbsp;полную мощь, чтобы доставлять решения быстрее.
             </p>
           </div>
 
@@ -362,12 +362,12 @@ export default function Home() {
               {
                 icon: Cpu,
                 title: 'ИИ в ядре',
-                desc: 'Языковые модели встроены в архитектуру продукта, а не добавлены сверху как функция'
+                desc: 'Языковые модели встроены в архитектуру продукта, а&nbsp;не&nbsp;добавлены сверху как&nbsp;функция'
               },
               {
                 icon: Code2,
                 title: 'Агенты пишут код',
-                desc: 'Агенты генерируют, тестируют и оптимизируют код — разработчики контролируют результат, а не пишут рутину'
+                desc: 'Агенты генерируют, тестируют и оптимизируют код — разработчики контролируют результат, а&nbsp;не&nbsp;пишут рутину'
               },
               {
                 icon: Zap,
@@ -377,7 +377,7 @@ export default function Home() {
               {
                 icon: Activity,
                 title: 'Непрерывное улучшение',
-                desc: 'Модели обучаются на действующих сценариях вашего бизнеса и становятся точнее с каждым запросом'
+                desc: 'Модели обучаются на действующих сценариях вашего бизнеса и становятся точнее с&nbsp;каждым запросом'
               }
             ].map((item, i) => (
               <motion.div
