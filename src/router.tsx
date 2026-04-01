@@ -18,4 +18,4 @@ export const router = createBrowserRouter([
       },
     ],
   },
-], { basename: '/cicle' })
+])
