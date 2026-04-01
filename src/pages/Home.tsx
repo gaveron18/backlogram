@@ -748,7 +748,7 @@ export default function Home() {
                 Популярно
               </div>
               <h3 className="text-xl font-bold mb-2">Локальная лицензия</h3>
-              <p className="text-slate-400 dark:text-slate-500 text-sm mb-6">On-premise установка (год)</p>
+              <p className="text-slate-400 dark:text-slate-500 text-sm mb-6">В контуре предприятия (год)</p>
               <div className="mb-6 flex items-baseline gap-2">
                 <span className="text-4xl font-black text-slate-900 dark:text-white">290 000</span>
                 <span className="text-slate-400 dark:text-slate-500 text-xl font-bold">₽</span>
