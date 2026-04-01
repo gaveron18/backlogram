@@ -11,7 +11,7 @@ export function Header() {
   const navLinks = [
     { name: 'Технология', href: '#technology' },
     { name: 'Как работаем', href: '#process' },
-    { name: 'Кейсы', href: '#cases' },
+    { name: 'Примеры', href: '#cases' },
     { name: 'Цены', href: '#pricing' },
   ]
 
