@@ -348,7 +348,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-500 dark:text-blue-400 text-sm font-medium mb-6">
               <Cpu size={14} />
-              <span>AI-native (на основе искусственного интеллекта) разработка</span>
+              <span>AI-native (разработка, органично интегрированная с ИИ)</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-800 dark:text-slate-100">
               Мы строим продукты, интегрированные с&nbsp;<span className="text-blue-500 dark:text-blue-400">искусственным интеллектом</span>
