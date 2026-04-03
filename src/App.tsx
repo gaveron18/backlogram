@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
+import { CookieConsent } from './components/CookieConsent'
 import { ThemeProvider } from './context/ThemeContext'
 
 function ScrollToHash() {
@@ -32,6 +33,7 @@ export default function App() {
           <Outlet />
         </main>
         <Footer />
+        <CookieConsent />
       </div>
     </ThemeProvider>
   )
