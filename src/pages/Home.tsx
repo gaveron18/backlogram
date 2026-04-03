@@ -724,7 +724,7 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-2">Пилотный проект</h3>
               <p className="text-slate-400 dark:text-slate-500 text-sm mb-6">Для проверки на реальной задаче</p>
               <div className="mb-6">
-                <div className="mt-3 flex items-baseline gap-2">
+                <div className="flex items-baseline gap-2">
                   <span className="text-4xl font-black text-slate-900 dark:text-white">от 93 750</span>
                   <span className="text-slate-400 dark:text-slate-500 text-xl font-bold">р</span>
                 </div>
