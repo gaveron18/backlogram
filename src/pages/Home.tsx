@@ -724,12 +724,12 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-2">Пилотный проект</h3>
               <p className="text-slate-400 dark:text-slate-500 text-sm mb-6">Для проверки на реальной задаче</p>
               <div className="mb-6">
-                <span className="text-slate-400 dark:text-slate-400 text-sm uppercase font-bold tracking-widest">Сроки:</span>
-                <div className="text-2xl font-bold text-slate-800 dark:text-slate-100 mt-1">4–8 недель</div>
                 <div className="mt-3 flex items-baseline gap-2">
                   <span className="text-4xl font-black text-slate-900 dark:text-white">от 93 750</span>
                   <span className="text-slate-400 dark:text-slate-500 text-xl font-bold">р</span>
                 </div>
+                <span className="text-slate-400 dark:text-slate-400 text-sm uppercase font-bold tracking-widest">Сроки:</span>
+                <div className="text-2xl font-bold text-slate-800 dark:text-slate-100 mt-1">4–8 недель</div>
               </div>
               <ul className="space-y-4 mb-8 flex-1">
                 {['Выбор задачи из очереди', 'Полный цикл разработки', 'Развертывание в контуре', 'Инструкции и доки'].map((item, i) => (
