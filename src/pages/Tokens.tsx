@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
 import { Zap, ArrowRight, Users, Clock } from 'lucide-react'
 
 export default function Tokens() {
@@ -162,12 +161,12 @@ export default function Tokens() {
             viewport={{ once: true }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <Link
-              to="/start.html"
+            <a
+              href="/start.html"
               className="w-full sm:w-auto px-8 py-4 bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 text-slate-700 dark:text-slate-300 font-semibold rounded-xl transition-all text-center"
             >
               Начать работу
-            </Link>
+            </a>
           </motion.div>
         </div>
       </section>
