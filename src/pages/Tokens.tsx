@@ -23,7 +23,7 @@ export default function Tokens() {
       examples: 'Заполнение CRM, email, звонки',
     },
     {
-      role: 'Планово-экономический отдел',
+      role: 'Планово-экономический отдел (ПЭО)',
       actionsPerHour: '15–30',
       examples: 'Открытие таблиц, расчёты, выгрузки, формирование отчётов',
       highlighted: true,
