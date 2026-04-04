@@ -24,7 +24,7 @@ export const router = createBrowserRouter([
         element: <Fail />,
       },
       {
-        path: 'tokens',
+        path: 'tokens.html',
         element: <Tokens />,
       },
       {
