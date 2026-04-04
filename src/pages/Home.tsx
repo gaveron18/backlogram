@@ -407,7 +407,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Мы не заменяем, мы дополняем</h2>
-            <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">Инструмент, который бесшовно встраивается в ваш существующий ИТ-ландшафт.</p>
+            <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">Инструмент, который бесшовно встраивается в ваш существующий ИТ-ландшафт.</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -434,7 +434,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Примеры из практики</h2>
-            <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">Реальные проекты, реализованные на платформе для разных отраслей и задач</p>
+            <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">Реальные проекты, реализованные на платформе для разных отраслей и задач</p>
           </div>
 
           {/* Case 1: Construction Worker Motivation System */}
@@ -446,7 +446,7 @@ export default function Home() {
                   Система мотивации строительного персонала
                 </h3>
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
-                  Заказчик хотел глобальную платформу типа WeChat — покрыть все задачи прораба и интегрироваться в жизнь заказчиков и исполнителей проектов.
+                  Заказчик хотел глобальную платформу типа WeChat — покрыть все задачи прораба и интегрироваться в жизнь заказчиков и исполнителей проектов.
                 </p>
                 <div className="space-y-4">
                   <div className="flex gap-4">
@@ -464,7 +464,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="text-sm font-bold text-slate-700 dark:text-slate-200">Реализация:</h4>
-                      <p className="text-sm text-slate-500 dark:text-slate-400">Структура данных и наполнение, сводная панель метрик, планирование H_min, назначения, мониторинг, экономика и симуляция сценариев.</p>
+                      <p className="text-sm text-slate-500 dark:text-slate-400">Структура данных и наполнение, сводная панель метрик, планирование H_min, назначения, мониторинг, экономика и симуляция сценариев.</p>
                     </div>
                   </div>
                 </div>
@@ -540,7 +540,7 @@ export default function Home() {
                   Аудит суверенности портфеля инвестиционного фонда
                 </h3>
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
-                  Фонд, инвестирующий в технологические компании (БПЛА, дроны, глубокие технологии). Портфель из десятков стартапов с разной степенью зависимости от иностранных технологий.
+                  Фонд, инвестирующий в технологические компании (БПЛА, дроны, глубокие технологии). Портфель из десятков стартапов с разной степенью зависимости от иностранных технологий.
                 </p>
                 <div className="space-y-4">
                   <div className="flex gap-4">
@@ -549,7 +549,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="text-sm font-bold text-slate-700 dark:text-slate-200">Задача:</h4>
-                      <p className="text-sm text-slate-500 dark:text-slate-400">Единая методология оценки суверенности по 9 измерениям, проверка соответствия НПА (ПП-1726, ФЗ-149) и дорожная карта.</p>
+                      <p className="text-sm text-slate-500 dark:text-slate-400">Единая методология оценки суверенности по 9 измерениям, проверка соответствия НПА (ПП-1726, ФЗ-149) и дорожная карта.</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
@@ -558,7 +558,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="text-sm font-bold text-slate-700 dark:text-slate-200">Реализация:</h4>
-                      <p className="text-sm text-slate-500 dark:text-slate-400">9D Аудит, пирамида суверенности, моделировщик, анализатор хранилищ кода (50+ метрик) и автоматические дорожные карты.</p>
+                      <p className="text-sm text-slate-500 dark:text-slate-400">9D Аудит, пирамида суверенности, моделировщик, анализатор хранилищ кода (50+ метрик) и автоматические дорожные карты.</p>
                     </div>
                   </div>
                 </div>
@@ -590,7 +590,7 @@ export default function Home() {
                   Управление процессами обработки персональных данных (ПДн)
                 </h3>
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
-                  Крупный банк с тысячами сотрудников и десятками разрозненных ИТ-систем.
+                  Крупный банк с тысячами сотрудников и десятками разрозненных ИТ-систем.
                 </p>
                 <div className="space-y-4">
                   <div className="flex gap-4">
@@ -599,7 +599,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="text-sm font-bold text-slate-700 dark:text-slate-200">Задача:</h4>
-                      <p className="text-sm text-slate-500 dark:text-slate-400">Централизованный учет ПДн, версионность, согласование и интеграция с аудитом.</p>
+                      <p className="text-sm text-slate-500 dark:text-slate-400">Централизованный учет ПДн, версионность, согласование и интеграция с аудитом.</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
@@ -608,7 +608,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="text-sm font-bold text-slate-700 dark:text-slate-200">Реализация:</h4>
-                      <p className="text-sm text-slate-500 dark:text-slate-400">Реестр процессов, автоматическая отчетность без программирования, встроенная ролевая модель.</p>
+                      <p className="text-sm text-slate-500 dark:text-slate-400">Реестр процессов, автоматическая отчетность без программирования, встроенная ролевая модель.</p>
                     </div>
                   </div>
                 </div>
@@ -641,7 +641,7 @@ export default function Home() {
                   </div>
                   <img
                     src={`${import.meta.env.BASE_URL}case-pdn.png`}
-                    alt="Процессы обработки персональных данных (ПДн) — реестр процессов в банке"
+                    alt="Процессы обработки персональных данных (ПДн) — реестр процессов в банке"
                     className="w-full block"
                   />
                 </div>
@@ -655,8 +655,8 @@ export default function Home() {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Готовые типы проектов для вашего бэклога (очереди задач)</h2>
-            <p className="text-slate-500 dark:text-slate-400">Любая из этих задач может быть реализована как полноценное веб-приложение</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Готовые типы проектов для вашего бэклога (очереди задач)</h2>
+            <p className="text-slate-500 dark:text-slate-400">Любая из этих задач может быть реализована как полноценное веб-приложение</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -694,7 +694,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Как начать быстро и комфортно</h2>
-            <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto italic italic">Прозрачные условия для пилота и эксплуатации</p>
+            <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto italic italic">Прозрачные условия для пилота и эксплуатации</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -742,7 +742,7 @@ export default function Home() {
                 ))}
               </ul>
               <a href="#cta" className="w-full py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-lg shadow-blue-600/20 transition-all text-center block">
-                Оформить подписку
+                Уточнить условия
               </a>
             </div>
 
@@ -762,7 +762,7 @@ export default function Home() {
                 ))}
               </ul>
               <a href="#cta" className="w-full py-4 bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-slate-400 dark:hover:border-slate-600 text-slate-800 dark:text-white font-bold rounded-xl transition-all text-center block">
-                Уточнить условия
+                Заказать под ключ
               </a>
             </div>
           </div>
@@ -773,8 +773,8 @@ export default function Home() {
       <section className="py-24 border-t border-slate-200 dark:border-slate-900 bg-white dark:bg-slate-950/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Кто работает над вашей задачей</h2>
-            <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">Мы предоставляем экспертов, которые знают платформу и понимают бизнес-процессы.</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Кто работает над вашей задачей</h2>
+            <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">Мы предоставляем экспертов, которые знают платформу и понимают бизнес-процессы.</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -785,7 +785,7 @@ export default function Home() {
               <div>
                 <h3 className="text-xl font-bold text-slate-800 dark:text-slate-100 mb-2">Системный аналитик</h3>
                 <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
-                  Сбор требований, проектирование структур данных и логики процессов. Переводит бизнес-язык в архитектуру платформы.
+                  Сбор требований, проектирование структур данных и логики процессов. Переводит бизнес-язык в архитектуру платформы.
                 </p>
               </div>
             </div>
@@ -797,14 +797,14 @@ export default function Home() {
               <div>
                 <h3 className="text-xl font-bold text-slate-800 dark:text-slate-100 mb-2">Разработчик платформы</h3>
                 <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
-                  Настройка логики, интеграций и интерфейсов. Обеспечивает бесшовную работу приложения в вашем контуре.
+                  Настройка логики, интеграций и интерфейсов. Обеспечивает бесшовную работу приложения в вашем контуре.
                 </p>
               </div>
             </div>
           </div>
 
           <div className="mt-12 text-center text-slate-400 dark:text-slate-500 text-sm italic">
-            Результат сдается в виде готового приложения, полной технической документации и пользовательских инструкций.
+            Результат сдается в виде готового приложения, полной технической документации и пользовательских инструкций.
           </div>
         </div>
       </section>
