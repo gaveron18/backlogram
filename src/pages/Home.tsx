@@ -909,9 +909,9 @@ export default function Home() {
       <section id="cloud-tariffs" className="py-24 border-t border-slate-200 dark:border-slate-900 bg-slate-50 dark:bg-slate-900/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Тарифы на хостинг в облаке</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Тарифы на хостинг в облаке</h2>
             <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
-              Используйте платформу в облаке со справедливой тарифной моделью оплаты за фактически потребляемые ресурсы. 1 токен ≈ одному действию: открытие таблицы, создание записи, запуск отчёта.
+              Используйте платформу в облаке со справедливой тарифной моделью оплаты за фактически потребляемые ресурсы. 1 токен ≈ одному действию: открытие таблицы, создание записи, запуск отчёта.
             </p>
           </div>
 
@@ -926,9 +926,9 @@ export default function Home() {
               </div>
               <ul className="space-y-3 mb-8 flex-1">
                 {[
-                  '3 000 токенов в месяц',
+                  '3 000 токенов в месяц',
                   'Один пользователь',
-                  '~2 часа активной работы в день',
+                  '~2 часа активной работы в день',
                   'Навсегда бесплатно',
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-sm text-slate-500 dark:text-slate-400">
@@ -953,16 +953,16 @@ export default function Home() {
                 Популярно
               </div>
               <h3 className="text-xl font-bold mb-1">Стартап</h3>
-              <p className="text-slate-400 dark:text-slate-500 text-sm mb-6">Подходит для 80% клиентов</p>
+              <p className="text-slate-400 dark:text-slate-500 text-sm mb-6">Подходит для 80% клиентов</p>
               <div className="mb-2 flex items-baseline gap-2">
                 <span className="text-4xl font-black text-slate-900 dark:text-white">1 950</span>
                 <span className="text-slate-400 dark:text-slate-500 text-xl font-bold">₽/мес</span>
               </div>
               <ul className="space-y-3 mb-8 flex-1">
                 {[
-                  '5 000 токенов в месяц',
+                  '5 000 токенов в месяц',
                   'Несколько пользователей',
-                  '3–4 часа командной работы в день (5 чел.)',
+                  '3–4 часа командной работы в день (5 чел.)',
                   'Превышение не блокирует работу',
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-sm text-slate-500 dark:text-slate-400">
@@ -991,9 +991,9 @@ export default function Home() {
               </div>
               <ul className="space-y-3 mb-8 flex-1">
                 {[
-                  'от 10 000 токенов в месяц',
+                  'от 10 000 токенов в месяц',
                   'Несколько пользователей',
-                  'Каждый следующий пакет на 20% дешевле',
+                  'Каждый следующий пакет на 20% дешевле',
                   'Превышение не блокирует работу',
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-sm text-slate-500 dark:text-slate-400">
