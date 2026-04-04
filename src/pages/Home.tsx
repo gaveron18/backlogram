@@ -812,7 +812,7 @@ export default function Home() {
       {/* 12. Final CTA Form */}
       <section id="cta" className="py-24 border-t border-slate-200 dark:border-slate-900 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center bg-white dark:bg-slate-950 p-6 sm:p-8 lg:p-12 rounded-2xl lg:rounded-[3rem] border border-slate-200 dark:border-slate-800 shadow-xl dark:shadow-2xl overflow-hidden relative">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center bg-white dark:bg-slate-950 px-3 py-6 sm:p-8 lg:p-12 rounded-2xl lg:rounded-[3rem] border border-slate-200 dark:border-slate-800 shadow-xl dark:shadow-2xl overflow-hidden relative">
             <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600/10 blur-[100px] rounded-full -z-10" />
 
             <div>
@@ -843,7 +843,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-slate-50 dark:bg-slate-900/50 p-5 sm:p-8 rounded-2xl sm:rounded-3xl border border-slate-200 dark:border-slate-800 backdrop-blur-sm">
+            <div className="bg-slate-50 dark:bg-slate-900/50 px-3 py-5 sm:p-8 rounded-2xl sm:rounded-3xl border border-slate-200 dark:border-slate-800 backdrop-blur-sm">
               <form className="space-y-4" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
