@@ -36,9 +36,12 @@ export default function Tokens() {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Стоимость действий в токенах</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Почему стоимость в токенах</h2>
             <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
-              Большинство операций стоят 1 токен. Тяжёлые действия — дороже.
+              Вы привыкли, что в облачных сервисах платят либо за каждого сотрудника, либо за гигабайты места. Здесь вы платите за реальную работу. Большинство ваших действий в системе тратят по 1 токену. Тяжёлые действия — дороже.
+            </p>
+            <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
+              Каждый раз, когда вы что-то делаете в системе, счетчик делает «щелчок». Это честно: заплатили только за то, чем реально пользовались.
             </p>
           </div>
 
