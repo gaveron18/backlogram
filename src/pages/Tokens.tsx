@@ -89,7 +89,16 @@ export default function Tokens() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Сколько токенов расходует сотрудник?</h2>
             <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
-              Расход зависит от типа деятельности. Исследование ActivTrak (135 000 пользователей)
+              Расход зависит от типа деятельности.{' '}
+              <a
+                href="https://www.activtrak.com/news/press-release-productivity-benchmarks-report-1h2024/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-slate-700 dark:hover:text-slate-200"
+              >
+                Исследование ActivTrak
+              </a>{' '}
+              (135 000 пользователей)
               подтверждает: сотрудник продуктивно работает ~6,5 часов в день из 8.
             </p>
           </div>
