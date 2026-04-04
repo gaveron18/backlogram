@@ -904,6 +904,117 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+      {/* 14. Cloud Hosting Tariffs */}
+      <section id="cloud-tariffs" className="py-24 border-t border-slate-200 dark:border-slate-900 bg-slate-50 dark:bg-slate-900/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Тарифы на хостинг в облаке</h2>
+            <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
+              Запустите платформу в облаке без установки. 1 токен ≈ одному действию: открытие таблицы, создание записи, запуск отчёта.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {/* Free plan */}
+            <div className="p-8 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 flex flex-col hover:border-slate-300 dark:hover:border-slate-700 transition-all shadow-sm dark:shadow-none">
+              <h3 className="text-xl font-bold mb-1">Знакомство</h3>
+              <p className="text-slate-400 dark:text-slate-500 text-sm mb-6">Личная песочница</p>
+              <div className="mb-6 flex items-baseline gap-2">
+                <span className="text-4xl font-black text-slate-900 dark:text-white">0</span>
+                <span className="text-slate-400 dark:text-slate-500 text-xl font-bold">₽/мес</span>
+              </div>
+              <ul className="space-y-3 mb-8 flex-1">
+                {[
+                  '3 000 токенов в месяц',
+                  'Один пользователь',
+                  '~2 часа активной работы в день',
+                  'Навсегда бесплатно',
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-sm text-slate-500 dark:text-slate-400">
+                    <CheckCircle2 size={14} className="text-blue-500 shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <a
+                href="https://ideav.ru/start.html"
+                target="start"
+                rel="noopener noreferrer"
+                className="w-full py-4 bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-slate-400 dark:hover:border-slate-600 text-slate-800 dark:text-white font-bold rounded-xl transition-all text-center block"
+              >
+                Начать бесплатно
+              </a>
+            </div>
+
+            {/* Startup plan */}
+            <div className="p-8 rounded-3xl border-2 border-blue-600 bg-white dark:bg-slate-950 relative flex flex-col shadow-[0_0_50px_-12px_rgba(37,99,235,0.3)]">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-4 py-1 bg-blue-600 text-white text-[10px] font-black uppercase tracking-[0.2em] rounded-full">
+                Популярно
+              </div>
+              <h3 className="text-xl font-bold mb-1">Стартап</h3>
+              <p className="text-slate-400 dark:text-slate-500 text-sm mb-6">Подходит для 80% клиентов</p>
+              <div className="mb-2 flex items-baseline gap-2">
+                <span className="text-4xl font-black text-slate-900 dark:text-white">1 950</span>
+                <span className="text-slate-400 dark:text-slate-500 text-xl font-bold">₽/мес</span>
+              </div>
+              <div className="mb-6 text-sm text-slate-400 dark:text-slate-500">или 15 900 ₽/год</div>
+              <ul className="space-y-3 mb-8 flex-1">
+                {[
+                  '5 000 токенов в месяц',
+                  'Несколько пользователей',
+                  '3–4 часа командной работы в день (5 чел.)',
+                  'Превышение не блокирует работу',
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-sm text-slate-500 dark:text-slate-400">
+                    <CheckCircle2 size={14} className="text-blue-500 shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <a
+                href="https://ideav.ru/start.html"
+                target="start"
+                rel="noopener noreferrer"
+                className="w-full py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl shadow-lg shadow-blue-600/20 transition-all text-center block"
+              >
+                Подключить
+              </a>
+            </div>
+
+            {/* Scalable plan */}
+            <div className="p-8 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 flex flex-col hover:border-slate-300 dark:hover:border-slate-700 transition-all shadow-sm dark:shadow-none">
+              <h3 className="text-xl font-bold mb-1">Масштабируемый</h3>
+              <p className="text-slate-400 dark:text-slate-500 text-sm mb-6">Регрессивная цена пакетов</p>
+              <div className="mb-6 flex items-baseline gap-2">
+                <span className="text-4xl font-black text-slate-900 dark:text-white">от 4 900</span>
+                <span className="text-slate-400 dark:text-slate-500 text-xl font-bold">₽/мес</span>
+              </div>
+              <ul className="space-y-3 mb-8 flex-1">
+                {[
+                  'от 10 000 токенов в месяц',
+                  'Несколько пользователей',
+                  'Каждый следующий пакет на 20% дешевле',
+                  'Превышение не блокирует работу',
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-sm text-slate-500 dark:text-slate-400">
+                    <CheckCircle2 size={14} className="text-blue-500 shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <a
+                href="https://ideav.ru/start.html"
+                target="start"
+                rel="noopener noreferrer"
+                className="w-full py-4 bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-slate-400 dark:hover:border-slate-600 text-slate-800 dark:text-white font-bold rounded-xl transition-all text-center block"
+              >
+                Подробнее
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
