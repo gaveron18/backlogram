@@ -958,7 +958,6 @@ export default function Home() {
                 <span className="text-4xl font-black text-slate-900 dark:text-white">1 950</span>
                 <span className="text-slate-400 dark:text-slate-500 text-xl font-bold">₽/мес</span>
               </div>
-              <div className="mb-6 text-sm text-slate-400 dark:text-slate-500">или 15 900 ₽/год</div>
               <ul className="space-y-3 mb-8 flex-1">
                 {[
                   '5 000 токенов в месяц',
@@ -1012,6 +1011,16 @@ export default function Home() {
                 Подробнее
               </a>
             </div>
+          </div>
+          <div className="text-center mt-10">
+            <a
+              href="https://ideav.ru/start.html#tarif"
+              target="start"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium underline underline-offset-4 transition-colors"
+            >
+              Подробнее об облачных тарифах
+            </a>
           </div>
         </div>
       </section>
