@@ -848,20 +848,20 @@ export default function Home() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-2 ml-1">Имя</label>
-                    <input name="name" type="text" className="w-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 text-slate-800 dark:text-slate-100 focus:border-blue-500 outline-none transition-all" placeholder="Александр" />
+                    <input name="name" type="text" className="w-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-2 sm:py-3 text-slate-800 dark:text-slate-100 focus:border-blue-500 outline-none transition-all" placeholder="Александр" />
                   </div>
                   <div>
                     <label className="block text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-2 ml-1">Компания</label>
-                    <input name="company" type="text" className="w-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 text-slate-800 dark:text-slate-100 focus:border-blue-500 outline-none transition-all" placeholder="Digital Corp" />
+                    <input name="company" type="text" className="w-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-2 sm:py-3 text-slate-800 dark:text-slate-100 focus:border-blue-500 outline-none transition-all" placeholder="Digital Corp" />
                   </div>
                 </div>
                 <div>
                   <label className="block text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-2 ml-1">Email / Telegram</label>
-                  <input name="contact" type="text" className="w-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 text-slate-800 dark:text-slate-100 focus:border-blue-500 outline-none transition-all" placeholder="@username" />
+                  <input name="contact" type="text" className="w-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-2 sm:py-3 text-slate-800 dark:text-slate-100 focus:border-blue-500 outline-none transition-all" placeholder="@username" />
                 </div>
                 <div>
                   <label className="block text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-2 ml-1">Задача (коротко)</label>
-                  <textarea name="task" rows={4} className="w-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-3 text-slate-800 dark:text-slate-100 focus:border-blue-500 outline-none transition-all resize-none" placeholder="Нужно перенести учет ПДн из Excel..." />
+                  <textarea name="task" rows={3} className="w-full bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-2 sm:py-3 text-slate-800 dark:text-slate-100 focus:border-blue-500 outline-none transition-all resize-none" placeholder="Нужно перенести учет ПДн из Excel..." />
                 </div>
 
                 {formState === 'success' && (
@@ -877,7 +877,7 @@ export default function Home() {
                 <button
                   type="submit"
                   disabled={formState === 'sending' || formState === 'success'}
-                  className="w-full py-4 bg-blue-600 hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold rounded-xl shadow-lg shadow-blue-600/20 transition-all flex items-center justify-center gap-2"
+                  className="w-full py-3 sm:py-4 bg-blue-600 hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold rounded-xl shadow-lg shadow-blue-600/20 transition-all flex items-center justify-center gap-2"
                 >
                   {formState === 'sending' ? 'Отправка...' : 'Отправить на оценку'}
                   {formState !== 'sending' && <Send size={18} />}
