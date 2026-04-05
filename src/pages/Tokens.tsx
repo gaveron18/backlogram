@@ -6,9 +6,9 @@ export default function Tokens() {
     { action: 'Открыть таблицу', cost: '1', heavy: false },
     { action: 'Создать запись', cost: '1', heavy: false },
     { action: 'Запустить отчёт по продажам', cost: '1', heavy: false },
+    { action: 'Пересчёт сложной таблицы с формулами', cost: '5–10', heavy: true },
     { action: 'Выгрузить 10 000 строк в Excel', cost: '10–20', heavy: true },
-    { action: 'Импорт прайса на 50 000 позиций', cost: '30–50', heavy: true },
-    { action: 'Пересчёт сводной таблицы с формулами', cost: '5–10', heavy: true },
+    { action: 'Импорт прайс-листа на 50 000 позиций', cost: '30–50', heavy: true },
   ]
 
   const userTypes = [
