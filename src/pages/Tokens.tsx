@@ -78,8 +78,8 @@ export default function Tokens() {
                 </motion.div>
               ))}
             </div>
-            <p className="text-center text-xs text-slate-400 dark:text-slate-500 mt-4 italic">
-              Молния — тяжёлые операции, которые расходуют больше одного токена
+            <p className="text-center text-xs text-slate-400 dark:text-slate-500 mt-4 italic flex items-center justify-center gap-1">
+              <Zap size={12} className="fill-current text-amber-500 flex-shrink-0" /> — тяжёлые операции, которые расходуют больше одного токена
             </p>
           </div>
         </div>
