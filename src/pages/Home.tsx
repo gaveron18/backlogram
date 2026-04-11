@@ -412,10 +412,10 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Activity, title: 'Интеграции', desc: 'Настройка интеграционных модулей без программирования' },
+              { icon: Activity, title: 'Интеграции', desc: 'Настройка интеграционных модулей без программирования' },
               { icon: Users, title: 'Аутентификация', sub: 'Интеграция с корпоративными методами аутентификации' },
-              { icon: BarChart3, title: 'Мониторинг и Аудит', sub: 'Выгрузка данных в ваши системы (ELK, Zabbix и др.)' },
-              { icon: Settings2, title: 'Локальная установка', sub: 'Работа на вашем контуре для полной безопасности' }
+              { icon: BarChart3, title: 'Мониторинг и Аудит', sub: 'Выгрузка данных в ваши системы (ELK, Zabbix и др.)' },
+              { icon: Settings2, title: 'Локальная установка', sub: 'Работа на вашем контуре для полной безопасности' }
             ].map((item, i) => (
               <div key={i} className="p-8 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 hover:border-slate-300 dark:hover:border-slate-700 transition-all text-center shadow-sm dark:shadow-none">
                 <div className="mx-auto w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-500 mb-6">
