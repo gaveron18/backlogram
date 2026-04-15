@@ -111,7 +111,7 @@ export default function ClientLogos() {
                 <div
                   key={`${client.name}-${i}`}
                   title={client.name}
-                  className="w-28 h-16 flex-shrink-0 flex items-center justify-center rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-3 hover:border-slate-300 dark:hover:border-slate-600 hover:shadow-sm transition-all"
+                  className="w-28 h-16 flex-shrink-0 flex items-center justify-center"
                 >
                   <img
                     src={client.logo}
