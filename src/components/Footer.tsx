@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Send, Mail, Phone, ExternalLink, ShieldCheck, Lock } from 'lucide-react'
+import { Send, Mail, Phone, ExternalLink } from 'lucide-react'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -67,42 +67,7 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Payment & Security badges */}
-        <div className="pt-8 border-t border-slate-200 dark:border-slate-900 flex flex-wrap justify-center md:justify-between items-center gap-6">
-          {/* Security indicators */}
-          <div className="flex items-center gap-4">
-            <div className="flex items-center gap-1.5 text-slate-400 dark:text-slate-500 text-xs">
-              <ShieldCheck size={14} className="text-green-500" />
-              <span>SSL 256-bit</span>
-            </div>
-            <div className="flex items-center gap-1.5 text-slate-400 dark:text-slate-500 text-xs">
-              <Lock size={14} className="text-green-500" />
-              <span>Безопасная оплата</span>
-            </div>
-          </div>
-
-          {/* Payment system logos */}
-          <div className="flex items-center gap-3">
-            {/* Visa */}
-            <div className="h-7 px-2.5 flex items-center justify-center rounded bg-[#1A1F71] select-none">
-              <span className="text-white font-bold italic text-sm tracking-tight" style={{ fontFamily: 'serif' }}>VISA</span>
-            </div>
-            {/* Mastercard */}
-            <div className="h-7 px-2 flex items-center justify-center rounded bg-slate-800 dark:bg-slate-700 select-none">
-              <svg width="34" height="21" viewBox="0 0 34 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="13" cy="10.5" r="9.5" fill="#EB001B"/>
-                <circle cx="21" cy="10.5" r="9.5" fill="#F79E1B"/>
-                <path d="M17 3.5a9.5 9.5 0 0 1 0 14 9.5 9.5 0 0 1 0-14z" fill="#FF5F00"/>
-              </svg>
-            </div>
-            {/* МИР */}
-            <div className="h-7 px-2.5 flex items-center justify-center rounded select-none" style={{ background: '#009DE0' }}>
-              <span className="text-white font-bold text-sm tracking-wide">МИР</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="pt-8 border-t border-slate-200 dark:border-slate-900 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-slate-400 dark:text-slate-500 text-xs">
             © {currentYear} АО «Интеграм». Все права защищены.
           </div>
