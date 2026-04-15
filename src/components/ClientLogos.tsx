@@ -5,13 +5,13 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 const CLIENTS = [
   { name: 'БМТ', logo: '/logos/bmt.png' },
   { name: "Domino's", logo: '/logos/dominos.svg' },
-  { name: 'Audi', logo: '/logos/audi.svg' },
-  { name: 'HRlink', logo: '/logos/hrlink.png' },
+  { name: 'Audi', logo: '/logos/audi.svg', small: true },
+  { name: 'HRlink', logo: '/logos/hrlink.png', small: true },
   { name: 'UpSound', logo: '/logos/upsound.png' },
   { name: 'ПраВь МСК', logo: '/logos/pravmsk.png' },
   { name: 'Долина Овощей', logo: '/logos/dolina-ovoshchey.png' },
   { name: 'Тянь', logo: '/logos/tyan.png' },
-  { name: 'BAIR', logo: '/logos/bair.svg' },
+  { name: 'BAIR', logo: '/logos/bair.png', small: true },
   { name: 'Milka', logo: '/logos/milka.svg' },
   { name: 'Фонд', logo: '/logos/fyond.png' },
   { name: 'ПМК-178 Бетон', logo: '/logos/pmk178.png' },
@@ -19,8 +19,10 @@ const CLIENTS = [
   { name: 'ГидроБот', logo: '/logos/gidrobot.png' },
 ]
 
+type Client = { name: string; logo: string; small?: boolean }
+
 // Triple the list for infinite loop
-const ITEMS = [...CLIENTS, ...CLIENTS, ...CLIENTS]
+const ITEMS: Client[] = [...CLIENTS, ...CLIENTS, ...CLIENTS]
 
 const CARD_WIDTH = 112  // w-28
 const GAP = 32          // gap-8
@@ -116,7 +118,7 @@ export default function ClientLogos() {
                   <img
                     src={client.logo}
                     alt={client.name}
-                    className="w-full h-full object-contain"
+                    className={`object-contain ${client.small ? 'w-3/4 h-3/4' : 'w-full h-full'}`}
                     draggable={false}
                   />
                 </div>
