@@ -762,11 +762,15 @@ export default function Home() {
               <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-4 py-1 bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300 text-[10px] font-black uppercase tracking-[0.2em] rounded-full">
                 срок: 2 недели
               </div>
-              <div className="w-12 h-12 rounded-2xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-4">
-                <Rocket size={22} className="text-slate-600 dark:text-slate-300" />
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-12 h-12 rounded-2xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center flex-shrink-0">
+                  <Rocket size={22} className="text-slate-600 dark:text-slate-300" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-1">Пилотный проект</h3>
+                  <p className="text-slate-400 dark:text-slate-500 text-sm">Для проверки на реальной задаче</p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-2">Пилотный проект</h3>
-              <p className="text-slate-400 dark:text-slate-500 text-sm mb-6">Для проверки на реальной задаче</p>
               <div className="mb-6">
                 <div className="flex items-baseline gap-2">
                   <span className="text-4xl font-black text-slate-900 dark:text-white">от 93 750</span>
@@ -790,11 +794,15 @@ export default function Home() {
               <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-4 py-1 bg-blue-600 text-white text-[10px] font-black uppercase tracking-[0.2em] rounded-full">
                 Популярно
               </div>
-              <div className="w-12 h-12 rounded-2xl bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center mb-4">
-                <Building2 size={22} className="text-blue-600 dark:text-blue-400" />
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-12 h-12 rounded-2xl bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center flex-shrink-0">
+                  <Building2 size={22} className="text-blue-600 dark:text-blue-400" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-1">Локальная лицензия</h3>
+                  <p className="text-slate-400 dark:text-slate-500 text-sm">В контуре предприятия (год)</p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-2">Локальная лицензия</h3>
-              <p className="text-slate-400 dark:text-slate-500 text-sm mb-6">В контуре предприятия (год)</p>
               <div className="mb-6 flex items-baseline gap-2">
                 <span className="text-4xl font-black text-slate-900 dark:text-white">290 000</span>
                 <span className="text-slate-400 dark:text-slate-500 text-xl font-bold">₽</span>
@@ -813,11 +821,15 @@ export default function Home() {
             </div>
 
             <div className="p-8 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 flex flex-col hover:border-slate-300 dark:hover:border-slate-700 transition-all shadow-sm dark:shadow-none">
-              <div className="w-12 h-12 rounded-2xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-4">
-                <Wrench size={22} className="text-slate-600 dark:text-slate-300" />
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-12 h-12 rounded-2xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center flex-shrink-0">
+                  <Wrench size={22} className="text-slate-600 dark:text-slate-300" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-1">Разработка</h3>
+                  <p className="text-slate-400 dark:text-slate-500 text-sm">Аналитика и настройка</p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-2">Разработка</h3>
-              <p className="text-slate-400 dark:text-slate-500 text-sm mb-6">Аналитика и настройка</p>
               <div className="mb-6 flex items-baseline gap-2">
                 <span className="text-4xl font-black text-slate-900 dark:text-white">3 750</span>
                 <span className="text-slate-400 dark:text-slate-500 text-xl font-bold">₽/час</span>
