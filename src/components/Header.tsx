@@ -47,10 +47,12 @@ export function Header() {
               {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
             </button>
             <a
-              href="/#cta"
+              href="https://ideav.ru/start.html"
+              target="start"
+              rel="noopener noreferrer"
               className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-lg transition-all"
             >
-              Заказать демо
+              Войти
             </a>
           </nav>
 
@@ -94,11 +96,13 @@ export function Header() {
             ))}
             <div className="pt-4 px-3">
               <a
-                href="/#cta"
+                href="https://ideav.ru/start.html"
+                target="start"
+                rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
                 className="flex items-center justify-center w-full px-4 py-3 bg-blue-600 text-white font-semibold rounded-lg"
               >
-                Заказать демо
+                Войти
               </a>
             </div>
           </div>
