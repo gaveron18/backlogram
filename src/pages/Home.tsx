@@ -28,6 +28,8 @@ import {
   Shield,
   TrendingUp,
   Truck,
+  Rocket,
+  Building2,
   Wrench
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
@@ -760,6 +762,9 @@ export default function Home() {
               <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-4 py-1 bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300 text-[10px] font-black uppercase tracking-[0.2em] rounded-full">
                 срок: 2 недели
               </div>
+              <div className="w-12 h-12 rounded-2xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-4">
+                <Rocket size={22} className="text-slate-600 dark:text-slate-300" />
+              </div>
               <h3 className="text-xl font-bold mb-2">Пилотный проект</h3>
               <p className="text-slate-400 dark:text-slate-500 text-sm mb-6">Для проверки на реальной задаче</p>
               <div className="mb-6">
@@ -785,6 +790,9 @@ export default function Home() {
               <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-4 py-1 bg-blue-600 text-white text-[10px] font-black uppercase tracking-[0.2em] rounded-full">
                 Популярно
               </div>
+              <div className="w-12 h-12 rounded-2xl bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center mb-4">
+                <Building2 size={22} className="text-blue-600 dark:text-blue-400" />
+              </div>
               <h3 className="text-xl font-bold mb-2">Локальная лицензия</h3>
               <p className="text-slate-400 dark:text-slate-500 text-sm mb-6">В контуре предприятия (год)</p>
               <div className="mb-6 flex items-baseline gap-2">
@@ -805,6 +813,9 @@ export default function Home() {
             </div>
 
             <div className="p-8 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 flex flex-col hover:border-slate-300 dark:hover:border-slate-700 transition-all shadow-sm dark:shadow-none">
+              <div className="w-12 h-12 rounded-2xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-4">
+                <Wrench size={22} className="text-slate-600 dark:text-slate-300" />
+              </div>
               <h3 className="text-xl font-bold mb-2">Разработка</h3>
               <p className="text-slate-400 dark:text-slate-500 text-sm mb-6">Аналитика и настройка</p>
               <div className="mb-6 flex items-baseline gap-2">
