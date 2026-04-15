@@ -11,7 +11,7 @@ const CLIENTS = [
   { name: 'ПраВь МСК', logo: '/logos/pravmsk.png' },
   { name: 'Долина Овощей', logo: '/logos/dolina-ovoshchey.png' },
   { name: 'Недорогокупили', logo: '/logos/tyan.png', small: true },
-  { name: 'BAIR', logo: '/logos/bair.jpg', small: true },
+  { name: 'BAIR', logo: '/logos/bair.jpg' },
   { name: 'Milka', logo: '/logos/milka.svg' },
   { name: 'Фонд', logo: '/logos/fyond.png' },
   { name: 'ПМК-178 Бетон', logo: '/logos/pmk178.png' },
