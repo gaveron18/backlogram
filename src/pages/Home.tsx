@@ -21,6 +21,7 @@ import {
   MessageSquare
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import ClientLogos from '@/components/ClientLogos'
 
 type FormState = 'idle' | 'sending' | 'success' | 'error'
 
@@ -126,6 +127,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* 1b. Client Logos */}
+      <ClientLogos />
 
       {/* 2. Problem Section */}
       <section className="py-24 bg-slate-50 dark:bg-slate-900/50 relative">
