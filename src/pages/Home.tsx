@@ -129,9 +129,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 1b. Client Logos */}
-      <ClientLogos />
-
       {/* 2. Problem Section */}
       <section className="py-24 bg-slate-50 dark:bg-slate-900/50 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -655,6 +652,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* 8b. Client Logos */}
+      <ClientLogos />
 
       {/* 9. Ready Projects Types */}
       <section className="py-24">
