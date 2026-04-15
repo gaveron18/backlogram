@@ -2,18 +2,21 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 const CLIENTS = [
-  { name: 'БМТ' },
-  { name: 'Neoflex' },
-  { name: "Domino's" },
-  { name: 'Audi' },
-  { name: 'Rlink' },
-  { name: 'UpSound' },
-  { name: 'ПроВе' },
-  { name: 'BAIR' },
-  { name: 'Milka' },
-  { name: 'ПМК-178 Бетон' },
-  { name: 'Торнон' },
-  { name: 'ГидроБот' },
+  { name: 'БМТ', logo: '/logos/bmt.png' },
+  { name: 'Neoflex', logo: '/logos/neoflex.png' },
+  { name: "Domino's", logo: '/logos/dominos.svg' },
+  { name: 'Audi', logo: '/logos/audi.svg' },
+  { name: 'HRlink', logo: '/logos/hrlink.png' },
+  { name: 'UpSound', logo: '/logos/upsound.png' },
+  { name: 'ПраВь МСК', logo: '/logos/pravmsk.png' },
+  { name: 'Долина Овощей', logo: '/logos/dolina-ovoshchey.png' },
+  { name: 'Тянь', logo: '/logos/tyan.png' },
+  { name: 'BAIR', logo: '/logos/bair.svg' },
+  { name: 'Milka', logo: '/logos/milka.svg' },
+  { name: 'Фонд', logo: '/logos/fyond.png' },
+  { name: 'ПМК-178 Бетон', logo: '/logos/pmk178.png' },
+  { name: 'Торион', logo: '/logos/torion.png' },
+  { name: 'ГидроБот', logo: '/logos/gidrobot.png' },
 ]
 
 export default function ClientLogos() {
@@ -28,14 +31,19 @@ export default function ClientLogos() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="flex flex-wrap justify-center gap-3 sm:gap-4"
+          className="flex flex-wrap justify-center gap-4"
         >
           {CLIENTS.map((client) => (
             <div
               key={client.name}
-              className="px-5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-500 dark:text-slate-400 text-sm font-semibold tracking-wide hover:border-slate-300 dark:hover:border-slate-700 hover:text-slate-700 dark:hover:text-slate-300 transition-all"
+              title={client.name}
+              className="w-28 h-16 flex items-center justify-center rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-2 hover:border-slate-300 dark:hover:border-slate-600 hover:shadow-sm transition-all"
             >
-              {client.name}
+              <img
+                src={client.logo}
+                alt={client.name}
+                className="max-w-full max-h-full object-contain"
+              />
             </div>
           ))}
         </motion.div>
