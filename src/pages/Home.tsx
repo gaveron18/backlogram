@@ -18,7 +18,17 @@ import {
   FileText,
   BarChart3,
   RefreshCcw,
-  MessageSquare
+  MessageSquare,
+  Scale,
+  Megaphone,
+  HardHat,
+  Heart,
+  GraduationCap,
+  Plane,
+  Shield,
+  TrendingUp,
+  Truck,
+  Wrench
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import ClientLogos from '@/components/ClientLogos'
@@ -193,6 +203,49 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* 2b. For Whom Section */}
+      <section id="for-whom" className="py-24 bg-slate-50 dark:bg-slate-900/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Для кого</h2>
+            <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
+              Интеграм создан для тех, кто устал от хаоса в бизнес-процессах. Платформа позволяет навести порядок в учёте, заменить громоздкое ПО в планово-экономических отделах, прогнозировать доходы и снижать расходы — без долгих внедрений.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mb-10">
+            {[
+              { icon: Scale,         label: 'Юридические фирмы' },
+              { icon: Megaphone,     label: 'Рекламные агентства' },
+              { icon: HardHat,       label: 'Строительные компании' },
+              { icon: Heart,         label: 'Медицинские клиники' },
+              { icon: GraduationCap, label: 'Образование' },
+              { icon: Code2,         label: 'ИТ-компании' },
+              { icon: Plane,         label: 'Туристические агентства' },
+              { icon: Shield,        label: 'Страховые компании' },
+              { icon: TrendingUp,    label: 'Финансовые компании' },
+              { icon: Truck,         label: 'Логистика' },
+              { icon: Wrench,        label: 'Технический сервис' },
+              { icon: Users,         label: 'Любой бизнес с процессами' },
+            ].map(({ icon: Icon, label }) => (
+              <div
+                key={label}
+                className="flex flex-col items-center gap-3 p-5 rounded-2xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 hover:border-blue-300 dark:hover:border-blue-700 hover:shadow-md transition-all group"
+              >
+                <div className="w-11 h-11 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center group-hover:bg-blue-50 dark:group-hover:bg-blue-900/30 transition-colors">
+                  <Icon size={20} className="text-slate-500 dark:text-slate-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" />
+                </div>
+                <span className="text-sm font-medium text-slate-700 dark:text-slate-300 text-center leading-tight">{label}</span>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-center text-sm text-slate-400 dark:text-slate-500">
+            Оптимальное решение для компаний со штатом до 700 сотрудников — с собственным ИТ-отделом или специалистами на аутсорсинге
+          </p>
         </div>
       </section>
 
