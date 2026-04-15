@@ -3,7 +3,6 @@ import { motion } from 'framer-motion'
 
 const CLIENTS = [
   { name: 'БМТ', logo: '/logos/bmt.png' },
-  { name: 'Neoflex', logo: '/logos/neoflex.png' },
   { name: "Domino's", logo: '/logos/dominos.svg' },
   { name: 'Audi', logo: '/logos/audi.svg' },
   { name: 'HRlink', logo: '/logos/hrlink.png' },
@@ -24,7 +23,7 @@ export default function ClientLogos() {
     <section className="py-16 border-t border-slate-200 dark:border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <p className="text-center text-xs font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-10">
-          Используют нашу платформу
+          Воспользовались опытом команды и нашими решениями
         </p>
         <motion.div
           initial={{ opacity: 0, y: 16 }}
@@ -37,12 +36,12 @@ export default function ClientLogos() {
             <div
               key={client.name}
               title={client.name}
-              className="w-28 h-16 flex items-center justify-center rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-2 hover:border-slate-300 dark:hover:border-slate-600 hover:shadow-sm transition-all"
+              className="w-28 h-16 flex items-center justify-center rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-3 hover:border-slate-300 dark:hover:border-slate-600 hover:shadow-sm transition-all"
             >
               <img
                 src={client.logo}
                 alt={client.name}
-                className="max-w-full max-h-full object-contain"
+                className="w-full h-full object-contain"
               />
             </div>
           ))}
