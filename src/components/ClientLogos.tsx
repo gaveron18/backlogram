@@ -1,5 +1,6 @@
-import React, { useRef } from 'react'
+import React, { useRef, useEffect, useCallback } from 'react'
 import { motion } from 'framer-motion'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const CLIENTS = [
   { name: 'БМТ', logo: '/logos/bmt.png' },
@@ -18,11 +19,43 @@ const CLIENTS = [
   { name: 'ГидроБот', logo: '/logos/gidrobot.png' },
 ]
 
+// Triple the list for infinite loop
+const ITEMS = [...CLIENTS, ...CLIENTS, ...CLIENTS]
+
+const CARD_WIDTH = 112  // w-28
+const GAP = 32          // gap-8
+const STEP = CARD_WIDTH + GAP  // px per card
+const SET_WIDTH = CLIENTS.length * STEP
+
 export default function ClientLogos() {
   const scrollRef = useRef<HTMLDivElement>(null)
   const isDragging = useRef(false)
   const startX = useRef(0)
   const scrollLeft = useRef(0)
+
+  // Initialize scroll position to the middle copy
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollLeft = SET_WIDTH
+    }
+  }, [])
+
+  // Infinite loop: jump when reaching edges of the middle copy
+  const handleScroll = useCallback(() => {
+    const el = scrollRef.current
+    if (!el) return
+    if (el.scrollLeft < STEP) {
+      el.scrollLeft += SET_WIDTH
+    } else if (el.scrollLeft >= SET_WIDTH * 2 - STEP) {
+      el.scrollLeft -= SET_WIDTH
+    }
+  }, [])
+
+  function scroll(dir: 'left' | 'right') {
+    const el = scrollRef.current
+    if (!el) return
+    el.scrollBy({ left: dir === 'left' ? -STEP : STEP, behavior: 'smooth' })
+  }
 
   function onMouseDown(e: React.MouseEvent) {
     isDragging.current = true
@@ -48,33 +81,57 @@ export default function ClientLogos() {
           Воспользовались опытом команды и нашими решениями
         </p>
         <motion.div
-          ref={scrollRef}
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="overflow-x-auto select-none cursor-grab active:cursor-grabbing"
-          onMouseDown={onMouseDown}
-          onMouseMove={onMouseMove}
-          onMouseUp={stopDrag}
-          onMouseLeave={stopDrag}
+          className="relative"
         >
-          <div className="flex gap-8 pb-2 px-1" style={{ width: 'max-content', margin: '0 auto' }}>
-            {CLIENTS.map((client) => (
-              <div
-                key={client.name}
-                title={client.name}
-                className="w-28 h-16 flex-shrink-0 flex items-center justify-center rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-3 hover:border-slate-300 dark:hover:border-slate-600 hover:shadow-sm transition-all"
-              >
-                <img
-                  src={client.logo}
-                  alt={client.name}
-                  className="w-full h-full object-contain"
-                  draggable={false}
-                />
-              </div>
-            ))}
+          {/* Left arrow */}
+          <button
+            onClick={() => scroll('left')}
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-white/70 dark:bg-slate-900/70 backdrop-blur-sm border border-slate-200/60 dark:border-slate-700/60 text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-all shadow-sm"
+            aria-label="Прокрутить влево"
+          >
+            <ChevronLeft size={18} />
+          </button>
+
+          {/* Scrollable track */}
+          <div
+            ref={scrollRef}
+            className="overflow-x-auto scrollbar-none select-none cursor-grab active:cursor-grabbing px-12"
+            onScroll={handleScroll}
+            onMouseDown={onMouseDown}
+            onMouseMove={onMouseMove}
+            onMouseUp={stopDrag}
+            onMouseLeave={stopDrag}
+          >
+            <div className="flex gap-8" style={{ width: 'max-content' }}>
+              {ITEMS.map((client, i) => (
+                <div
+                  key={`${client.name}-${i}`}
+                  title={client.name}
+                  className="w-28 h-16 flex-shrink-0 flex items-center justify-center rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-3 hover:border-slate-300 dark:hover:border-slate-600 hover:shadow-sm transition-all"
+                >
+                  <img
+                    src={client.logo}
+                    alt={client.name}
+                    className="w-full h-full object-contain"
+                    draggable={false}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
+
+          {/* Right arrow */}
+          <button
+            onClick={() => scroll('right')}
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-white/70 dark:bg-slate-900/70 backdrop-blur-sm border border-slate-200/60 dark:border-slate-700/60 text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-all shadow-sm"
+            aria-label="Прокрутить вправо"
+          >
+            <ChevronRight size={18} />
+          </button>
         </motion.div>
       </div>
     </section>
